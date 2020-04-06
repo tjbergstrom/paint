@@ -1,7 +1,7 @@
 /*
-TabMenu.cpp
-CS-Paint
+	TabMenu.cpp
 */
+
 #include <SFML/Graphics.hpp>
 #include "Button.hpp"
 #include "TabMenu.hpp"
@@ -11,9 +11,7 @@ using std::vector;
 #include <memory>
 using std::shared_ptr;
 
-
 TabMenu::TabMenu(const sf::Vector2i &position,vector<shared_ptr<Button>> &buttons): _position{ position }, _buttons{ buttons } {
-	
 }
 
 void TabMenu::draw(sf::RenderWindow &window) {
@@ -31,4 +29,5 @@ void TabMenu::setButtonTextures() {
 		_buttons[button]->setTexture(_buttons[button]->getState());
 	}
 }
+
 

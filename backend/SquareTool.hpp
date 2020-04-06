@@ -1,6 +1,6 @@
 /*
 	SquareTool creates solid square of given color of dimensions created by user's
-	click-and-drag.
+	click-and-drag
 */
 
 #include <SFML/Graphics.hpp>
@@ -20,3 +20,5 @@ class SquareTool : public Tool{
 		sf::Vector2i _startPos;
 		float _outlineThickness = 10;
 };
+
+

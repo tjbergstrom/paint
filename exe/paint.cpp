@@ -1,9 +1,7 @@
 /*
- *
- *	Main file for CSPaint program. Initializes program, manages display, and tracks user input.
- *
+ 	Main file for CSPaint program
+	 nitializes program, manages display, and tracks user input
  */
-
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
@@ -20,7 +18,6 @@
 using std::string;
 using std::cout;
 using std::endl;
-
 
 int main() {
 	int width = 1080;
@@ -111,3 +108,5 @@ int main() {
 		app.display();
 	}
 }
+
+

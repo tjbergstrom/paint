@@ -1,3 +1,7 @@
+/*
+	.cpp file for StraightLineTool class
+*/
+
 #include "StraightLineTool.hpp"
 using std::make_unique;
 
@@ -15,8 +19,12 @@ void StraightLineTool::paintTick(Frame& f, sf::Color c, sf::Event& e){
 		_mouseDown = false;
 	}
 }
-void StraightLineTool::scrollAction(sf::Event& e){}
+
+void StraightLineTool::scrollAction(sf::Event& e){
+}
 
 StraightLineTool::StraightLineTool(sf::RenderWindow& w): Tool(w){
 	this->getIcon().loadFromFile("assets/pencilCursor.png");
 }
+
+

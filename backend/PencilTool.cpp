@@ -1,7 +1,5 @@
 /*
- *
- *	.cpp file for PencilTool class.
- *
+ 	.cpp file for PencilTool class.
  */
 
 #include "PencilTool.hpp"
@@ -22,9 +20,13 @@ void PencilTool::paintTick(Frame& f, sf::Color c, sf::Event& e){
 		_mouseDown = false;
 	}
 }
-void PencilTool::scrollAction(sf::Event& e){}
+
+void PencilTool::scrollAction(sf::Event& e){
+}
 
 PencilTool::PencilTool(sf::RenderWindow& w): Tool(w){
 	this->getIcon().loadFromFile("assets/pencilCursor.png");
 	this->initializeSound("assets/drawEffect.wav");
 }
+
+

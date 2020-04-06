@@ -1,13 +1,14 @@
 /*
-	Tool object is abstract data type inherited by paint tools such as brushes, shapes, etc.
+	Tool object is abstract data type inherited by paint tools such as brushes, shapes, etc
 */
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include <string>
 #include "Frame.hpp"
-
 #ifndef TOOL_HPP_
 #define TOOL_HPP_
+
 class Tool{
 	public:
 		virtual void paintTick(Frame&, sf::Color,sf::Event& e)  = 0;
@@ -22,8 +23,11 @@ class Tool{
 	private:
 		sf::RenderWindow& _window;
 		sf::Texture _mouseIcon;
-		sf::SoundBuffer _sfxBuffer;    ///////////temp turn off link errors
+		sf::SoundBuffer _sfxBuffer;
 		sf::Sound _sfx;
 		int _sfxCounter = 0;
 };
+
 #endif
+
+

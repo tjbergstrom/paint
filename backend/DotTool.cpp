@@ -1,6 +1,7 @@
 /*
 	.cpp file for Dots class.
 */
+
 #include "DotTool.hpp"
 using std::make_unique;
 using std::unique_ptr;
@@ -15,6 +16,7 @@ void DotTool::paintTick(Frame& f, sf::Color c, sf::Event& e) {
 		this->playSound();     
 	}
 }
+
 void DotTool::scrollAction(sf::Event& e){
 	if(e.mouseWheelScroll.delta < 0 && _dotRadius < 50){
 		_dotRadius += 5;
@@ -23,8 +25,11 @@ void DotTool::scrollAction(sf::Event& e){
 		_dotRadius -= 5;
 	}
 }
+
 DotTool::DotTool(sf::RenderWindow& f): Tool(f){
 	this->getIcon().loadFromFile("assets/brushcursor.png");
 	this->initializeSound("assets/bubbles.wav");
 	//this->initializeSound("assets/drawEffect.wav");
 }
+
+

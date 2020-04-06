@@ -1,6 +1,11 @@
+/*
+	makes a straight line
+*/
+
 #include <SFML/Graphics.hpp>
 #include <memory>
 #include "Tool.hpp"
+
 class StraightLineTool : public Tool{
 	using Tool::Tool;
 	public:
@@ -11,3 +16,5 @@ class StraightLineTool : public Tool{
 		bool _mouseDown = false;
 		std::unique_ptr<sf::VertexArray> _line = NULL;
 };
+
+

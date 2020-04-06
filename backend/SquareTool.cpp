@@ -1,6 +1,7 @@
 /*
-	.cpp file for SquareTool class.
+	.cpp file for SquareTool class
 */
+
 #include "SquareTool.hpp"
 using std::unique_ptr;
 using std::make_unique;
@@ -27,6 +28,7 @@ void SquareTool::paintTick(Frame& f, sf::Color c, sf::Event& e){
 		_mouseDown = false;
 	}
 }
+
 void SquareTool::scrollAction(sf::Event& e){
 	if(e.mouseWheelScroll.delta < 0 && _outlineThickness < 50){
 		_outlineThickness += 5;
@@ -41,3 +43,5 @@ SquareTool::SquareTool(sf::RenderWindow& w): Tool(w){
 	this->initializeSound("assets/creepySound15.wav");
 	//this->initializeSound("assets/stretchEffect.wav");
 }
+
+

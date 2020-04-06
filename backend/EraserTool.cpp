@@ -1,6 +1,7 @@
 /*
-	.cpp file for Eraser tool.
+	.cpp file for Eraser tool
 */
+
 #include "EraserTool.hpp"
 using std::make_unique;
 using std::unique_ptr;
@@ -15,6 +16,7 @@ void EraserTool::paintTick(Frame& f, sf::Color c, sf::Event& e) {
 		this->playSound();            
 	}
 }
+
 void EraserTool::scrollAction(sf::Event& e){
 	if(e.mouseWheelScroll.delta < 0 && _dotRadius < 50){
 		_dotRadius += 5;
@@ -23,8 +25,10 @@ void EraserTool::scrollAction(sf::Event& e){
 		_dotRadius -= 5;
 	}
 }
+
 EraserTool::EraserTool(sf::RenderWindow& w): Tool(w){
 	this->initializeSound("assets/eraserEffect.wav");
 	this->getIcon().loadFromFile("assets/eraserIcon.png");
 }
+
 

@@ -1,13 +1,15 @@
 /*
-	Application object tracks high-level object such as the current tool, current frame, and
-	playing animations.
+	Application object tracks high-level object such as the current tool, 
+	current frame, and playing animations.
 */
+
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include "Frame.hpp"
 #include "Tool.hpp"
 #ifndef APP_HPP_
 #define APP_HPP_
+
 class Application{
 	public:
 		void drawCurrentFrame();
@@ -35,4 +37,7 @@ class Application{
 		sf::RenderWindow& _window;
 		Tool* _currentTool = NULL;
 };
+
 #endif
+
+
